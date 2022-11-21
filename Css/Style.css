@@ -1,0 +1,146 @@
+/*Reset*/
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*formando el navegador*/
+.Navegador__logo{
+    display: inline;
+    border-radius: 20px;
+    width: 100px;
+}
+
+body header nav ul li a{ 
+    color: black;
+    text-decoration: none;
+}
+
+.lista__elemento--blanco {
+    color: whitesmoke;  
+}
+
+.Navegador{
+    background-color: rgb(206, 116, 51);
+    position: relative;   
+}
+.formulario__boton{
+    width: 60px;
+}
+
+form{
+    display: inline;
+}
+
+.lista__elemento{
+    display: inline;
+    margin: 10px;
+    background-color: darksalmon;
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: 3px 2px black;
+    
+}
+
+.opciones{
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+
+.buscador{
+    position: absolute;
+    right: 35%;
+    top: 35%;
+}
+
+.formulario__texto{
+    width:400px;
+    height: 30px;   
+}
+
+/*formando Las paginas*/
+/*estilos generales*/
+.img-inicio{
+    width: 500px;
+}
+
+.contenido__titulo{
+    font-family: 'Prompt', sans-serif;
+    font-size: 70px;
+    text-align: center;
+
+}
+
+.contenido__Subtitulo{
+    font-family: 'Prompt', sans-serif;
+    text-align: center; 
+} 
+
+
+/*pagina ayuda*/
+.preguntas__texto{
+    font-family: 'Prompt', sans-serif;
+
+}
+.preguntas__subtitulo{
+    font-family: 'Prompt', sans-serif;
+}
+
+.preguntas{
+    margin: 20px;
+}
+
+/*pagina Productos*/
+.contenido__Subtitulo{
+    text-align: left;
+}
+
+.productos{
+    display: inline;
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
+
+.productos__img{
+    width: 300px;
+    display: inline;
+    margin: 20px;
+}
+
+.productos__texto{
+    font-family: 'Prompt', sans-serif;
+    display: block;
+}
+
+/*pagina contacto*/
+.consulta{
+    width: 500px;
+    height: 500px;
+}
+
+.consulta__nombre{
+    display: block;
+    margin: 3px 0 3px 3px;
+}
+.consulta__numero{
+    display: block;
+    margin: 3px 0 3px 3px;
+}
+.consulta__correo{
+    display: block;
+    margin: 3px 0 3px 3px;
+}
+.consulta__textarea{
+    display: block;
+    margin: 3px 0 3px 3px;
+    width: 400px;
+    height: 100px;
+}
+.consulta__boton{
+    margin: 3px 0 3px 3px;
+}

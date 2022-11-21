@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pag principal</title>
+    <!--Link de Css-->
+    <link rel="stylesheet" href="../Css/Style.css">
+    <!---links de google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Encabezado de la pagina-->
+    <header>
+        <nav class="Navegador">
+            <div>
+                <a href="../Index.html">
+                    <img src="../imgs/Logo-de-la-empresa.jpg" class="Navegador__logo" alt="Logo de la empresa">
+                </a> 
+            </div>
+            <!--Buscador-->
+            <div class="buscador">
+                <form action="" class="formulario">
+                    <input class="formulario__texto" type="search" placeholder="Buscador">
+                    <input class="formulario__boton" type="button" value="Buscar">
+                </form>
+            </div>
+            <!--Opciones del navegador-->
+            <div class="opciones">
+                <ul class="lista">
+                    <li class="lista__elemento"><a href="../Index.html">Inicio</a></li>
+                    <li class="lista__elemento"><a href="Productos.html">Productos</a></li>
+                    <li class="lista__elemento"><a href="Conocenos.html">Conocenos</a></li>
+                    <li class="lista__elemento"><a class="lista__elemento--blanco" href="contacto.html">Contacto</a></li>
+                    <li class="lista__elemento"><a href="ayuda.html">ayuda</a></li>
+                </ul>
+            </div>    
+        </nav>
+    </header>
+    <!--Contenido principal de la pagina-->
+    <main class="contenido">
+        <!--formulario de consulta--> 
+        <h1 class="contenido__titulo">Contactanos</h1>
+        <div class="contacto">
+            <form class="consulta" action="">
+                <input class="consulta__nombre" type="text" placeholder="Nombre y apellido" required>
+                <input class="consulta__numero" type="text" placeholder="Numero de contacto" required>
+                <input class="consulta__correo" type="email" placeholder="Email" required>
+                <textarea class="consulta__textarea" placeholder="Escribe tu consulta" name="" id="" cols="30" rows="10"></textarea>
+                <input class="consulta__boton" type="submit" value="Enviar">
+            </form>
+        </div>
+        <!--seccion de redes sociales-->
+        <div class="redes">
+            <h2 class="redes__subtitulo">Redes sociales</h2>
+            <div class="redes__facebook">perferendis</div>
+            <div class="redes__twiter">@perferendis</div>
+            <div class="redes__instagram">@perferendis</div>
+        </div>
+    </main>
+    <!--pie de pagina-->
+    <footer>
+        <h3>Todos Los derechos reservados</h3>
+    </footer>
+</body>
+</html>
