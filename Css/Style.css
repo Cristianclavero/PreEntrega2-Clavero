@@ -9,57 +9,80 @@
 
 /*formando el navegador*/
 .Navegador__logo{
-    display: inline;
     border-radius: 20px;
     width: 100px;
+    border: 5px;
 }
 
 body header nav ul li a{ 
-    color: black;
+    color: rgb(255, 251, 251);
     text-decoration: none;
 }
-
-.lista__elemento--blanco {
-    color: whitesmoke;  
-}
-
+  
 .Navegador{
-    background-color: rgb(206, 116, 51);
-    position: relative;   
-}
-.formulario__boton{
-    width: 60px;
+    background-image: linear-gradient(270deg, #f9a78c 0, #f39985 16.67%, #e8857a 33.33%, #d86c6c 50%, #c75260 66.67%, #ba3d5a 83.33%, rgb(176, 45, 89) 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 120px;
+    justify-content: space-around;
+
 }
 
-form{
-    display: inline;
+.lista{
+    list-style-type: none;
+    display: flex; 
+    flex-direction: row;
+    align-items:flex-end;   
 }
 
 .lista__elemento{
-    display: inline;
-    margin: 10px;
-    background-color: darksalmon;
+    margin: 7px;
+    background-image: radial-gradient(circle at 50% 50%, #9d4346 0, #8a3743 16.67%, #732b3c 33.33%, #591f32 50%, #401427 66.67%, #2b0b1c 83.33%, #1d0012 100%);
     padding: 3px;
     border-radius: 5px;
-    box-shadow: 3px 2px black;
-    
+    box-shadow: 10px 3px 22px 1px rgba(0,0,0,0.56); 
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);  
 }
 
 .opciones{
-    position: absolute;
     bottom: 10px;
     right: 5px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-self: end;
+}
+.formulario{
+    display: flex;
+    width: 50%;
+    justify-content: center;
 }
 
-.buscador{
-    position: absolute;
-    right: 35%;
-    top: 35%;
+.formulario__boton{
+    width: 60px;
+    box-shadow: 10px 3px 22px 1px rgba(0,0,0,0.56);   
 }
 
 .formulario__texto{
-    width:400px;
-    height: 30px;   
+    width:50%;
+    height: 30px;
+    box-shadow: 10px 3px 22px 1px rgba(0,0,0,0.56);
+    border-radius: 20px;
+
+}
+/*animacion para las opciones al indicarlas con el puntero*/
+ 
+@media (min-width: 1000px) 
+{
+.lista__elemento:hover {
+    background-image: radial-gradient(circle at 120.71% 50%, #9d4346 0, #8a3743 16.67%, #732b3c 33.33%, #591f32 50%, #401427 66.67%, #2b0b1c 83.33%, #1d0012 100%);
+    padding: 5px;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);   
+}
+body header nav ul li a:hover { 
+    color: rgb(255, 251, 251);
+}
 }
 
 /*formando Las paginas*/
@@ -95,26 +118,29 @@ form{
 }
 
 /*pagina Productos*/
+
+.contenido{
+    display: grid;
+    grid-template-columns:10fr 10fr 10fr;
+    
+}
+
 .contenido__Subtitulo{
     text-align: left;
 }
 
 .productos{
-    display: inline;
-    width: 600px;
-    height: 600px;
-    position: relative;
+    width: 400px;
+    height: 400px;
 }
 
 .productos__img{
     width: 300px;
-    display: inline;
     margin: 20px;
 }
 
 .productos__texto{
     font-family: 'Prompt', sans-serif;
-    display: block;
 }
 
 /*pagina contacto*/
@@ -143,4 +169,12 @@ form{
 }
 .consulta__boton{
     margin: 3px 0 3px 3px;
+}
+
+footer h2{
+    display: flex;
+    flex-direction:row;
+    align-self: end;
+    justify-content: center;
+    height: 1000px;
 }
